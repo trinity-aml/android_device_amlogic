@@ -1,0 +1,8 @@
+Sample project files and instructions on how to build your own TWRP are here: https://github.com/Magendanz/android_device_amlogic
+
+Basically, you just use the template that best matches your Amlogic reference board, replace the kernel and all the files in recovery/root with the latest versions from the stock recovery. There are some exceptions, which should NOT be replaced:
+
+- init.recovery.amlogic.rc
+- etc/twrp.fstab
+
+The last one really doesn't have a counterpart in the stock recovery, but you might be tempted to replace it with recovery.fstab. Try to resist that urge.
